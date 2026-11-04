@@ -245,15 +245,17 @@
         flex: 1;
         white-space: pre-wrap;
         font: 13px/1.45 var(--mono);
-        background: var(--sunk);
-        border: 1px solid var(--line);
+        background: rgba(10, 2, 5, 0.35); /* خلفية شفافة جداً تظهر اللوجو والباك جراوند */
+        backdrop-filter: blur(4px);        /* بلور خفيف جداً يخلي الخط واضح ومقروء */
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 50, 80, 0.25);
         border-radius: 16px;
         padding: 16px;
         height: calc(100vh - 170px);
         overflow-y: auto;
-        color: #c8ced8;
+        color: #ffffff;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); /* ظل خفيف للكلام عشان يفضل باين وواضح */
       }
-
       .notice {
         margin: 1em 0;
         padding: 0.7em 1em;
